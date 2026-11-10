@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The AI Issue — Your unofficial guide to the technology taking over your life</title>
+  <meta name="description" content="An interactive editorial explaining artificial intelligence: what it is, the good, the risks and the future.">
+  <meta name="theme-color" content="#690F26">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#ch1">Skip ahead</a>
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <!-- ============ STICKY NAV ============ -->
+  <nav class="nav" aria-label="Chapters">
+    <a class="nav__brand" href="#top">The <em>AI</em> Issue</a>
+    <ol class="nav__list">
+      <li><a href="#ch1" title="Chapter 1" aria-label="Chapter 1: The Exclusive"><span class="dot" aria-hidden="true"></span></a></li>
+      <li><a href="#ch2" title="Chapter 2" aria-label="Chapter 2: The Love Affair"><span class="dot" aria-hidden="true"></span></a></li>
+      <li><a href="#ch3" title="Chapter 3" aria-label="Chapter 3: The Scandal"><span class="dot" aria-hidden="true"></span></a></li>
+      <li><a href="#ch4" title="Chapter 4" aria-label="Chapter 4: The Future Forecast"><span class="dot" aria-hidden="true"></span></a></li>
+      <li><a href="#ch5" title="Chapter 5" aria-label="Chapter 5: The Interactive Edition"><span class="dot" aria-hidden="true"></span></a></li>
+    </ol>
+  </nav>
+
+  <!-- ============ COVER ============ -->
+  <header class="cover" id="top">
+    <p class="cover__vol type">Vol. 001 — The Digital Generation</p>
+
+    <h1 class="masthead">
+      <span class="masthead__the">The</span>
+      <span class="masthead__ai">AI</span>
+      <span class="masthead__issue">Issue</span>
+    </h1>
+
+    <figure class="cover__star">
+      <svg viewBox="0 0 400 700" role="img" aria-labelledby="robot-title" focusable="false">
+        <title id="robot-title">Illustration: a robot model striking a pose in a fashion photoshoot</title>
+        <defs>
+          <linearGradient id="chrome" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#FFFFFF"/><stop offset=".45" stop-color="#F4DDE2"/><stop offset="1" stop-color="#B9939B"/>
+          </linearGradient>
+          <linearGradient id="visor" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#171717"/><stop offset=".5" stop-color="#4a1527"/><stop offset="1" stop-color="#171717"/>
+          </linearGradient>
+          <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#E9D6A8"/><stop offset="1" stop-color="#8E7444"/>
+          </linearGradient>
+          <radialGradient id="studio" cx="50%" cy="35%" r="70%">
+            <stop offset="0" stop-color="#FAF6EF"/><stop offset=".55" stop-color="#F4DDE2"/><stop offset="1" stop-color="#D9AEB8"/>
+          </radialGradient>
+          <linearGradient id="coat" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#0d0d0d"/><stop offset=".55" stop-color="#2a2a2a"/><stop offset="1" stop-color="#0d0d0d"/>
+          </linearGradient>
+          <clipPath id="arch"><path d="M30 700 V190 a170 170 0 0 1 340 0 V700 Z"/></clipPath>
+        </defs>
+
+        <!-- studio backdrop: seamless paper in an arch, lit from the top -->
+        <path d="M30 700 V190 a170 170 0 0 1 340 0 V700 Z" fill="url(#studio)"/>
+        <g clip-path="url(#arch)">
+          <path d="M30 560 C120 548 280 548 370 560 V700 H30 Z" fill="#E8C3CC" opacity=".55"/>
+          <ellipse cx="205" cy="652" rx="110" ry="16" fill="#690F26" opacity=".22"/>
+        </g>
+        <path d="M30 700 V190 a170 170 0 0 1 340 0 V700" fill="none" stroke="#B79B65" stroke-width="1.5"/>
+
+        <!-- camera-flash sparkles -->
+        <g fill="#B79B65">
+          <path d="M78 250 l4 12 12 4 -12 4 -4 12 -4 -12 -12 -4 12 -4z"/>
+          <path d="M326 330 l3 9 9 3 -9 3 -3 9 -3 -9 -9 -3 9 -3z"/>
+          <path d="M300 150 l2.5 7 7 2.5 -7 2.5 -2.5 7 -2.5 -7 -7 -2.5 7 -2.5z"/>
+        </g>
+
+        <!-- legs (chrome) with stilettos: one straight, one stepping forward -->
+        <path d="M188 500 L180 628" stroke="url(#chrome)" stroke-width="20" stroke-linecap="round"/>
+        <path d="M216 500 L236 624" stroke="url(#chrome)" stroke-width="20" stroke-linecap="round"/>
+        <circle cx="184" cy="566" r="9" fill="#C9A7AE"/><circle cx="226" cy="563" r="9" fill="#C9A7AE"/>
+        <path d="M168 636 C170 624 190 622 194 632 L198 646 L192 646 L186 638 L172 644 Z" fill="#690F26"/>
+        <path d="M168 640 L166 656" stroke="#690F26" stroke-width="3"/>
+        <path d="M226 632 C230 620 248 620 252 630 L258 642 L250 643 L244 636 L230 640 Z" fill="#690F26"/>
+        <path d="M228 636 L226 652" stroke="#690F26" stroke-width="3"/>
+
+        <!-- long trench coat, cinched -->
+        <path d="M146 196 C158 186 242 186 254 196 L262 250 C258 280 240 296 236 312 L276 520 C230 532 170 532 124 520 L164 312 C160 296 142 280 138 250 Z" fill="url(#coat)"/>
+        <path d="M200 312 L200 524" stroke="#3a3a3a" stroke-width="1.5"/>
+        <path d="M172 196 L200 262 L228 196" fill="none" stroke="#B79B65" stroke-width="2"/>
+        <path d="M164 312 L236 312" stroke="#690F26" stroke-width="12"/>
+        <rect x="192" y="304" width="16" height="16" fill="none" stroke="url(#gold)" stroke-width="3"/>
+        <path d="M228 320 L246 372 M234 318 L258 360" stroke="#690F26" stroke-width="6" stroke-linecap="round"/>
+        <circle cx="186" cy="290" r="3.5" fill="url(#gold)"/><circle cx="214" cy="290" r="3.5" fill="url(#gold)"/>
+
+        <!-- arm on hip (viewer's left) -->
+        <path d="M150 204 L112 262 L160 304" fill="none" stroke="#141414" stroke-width="24" stroke-linejoin="round" stroke-linecap="round"/>
+        <circle cx="163" cy="306" r="10" fill="url(#chrome)"/>
+        <!-- arm raised to the head, a classic cover pose -->
+        <path d="M250 204 L290 160 L248 112" fill="none" stroke="#141414" stroke-width="22" stroke-linejoin="round" stroke-linecap="round"/>
+        <circle cx="246" cy="110" r="10" fill="url(#chrome)"/>
+
+        <!-- neck -->
+        <path d="M188 150 h24 v40 h-24 z" fill="url(#chrome)"/>
+        <path d="M188 162 h24 M188 174 h24" stroke="#B48E98" stroke-width="1.2"/>
+        <path d="M178 186 C190 196 210 196 222 186 L226 200 C210 210 190 210 174 200 Z" fill="#690F26"/>
+
+        <!-- head, tilted -->
+        <g transform="rotate(-8 200 112)">
+          <path d="M156 102 C150 58 176 40 202 40 C230 40 254 58 248 104 C246 124 254 140 258 150 C244 156 234 150 230 142 L172 142 C168 150 156 156 144 150 C148 140 156 124 156 102 Z" fill="#171717"/>
+          <path d="M202 58 C228 58 240 80 240 108 C240 138 222 156 202 156 C182 156 164 138 164 108 C164 80 176 58 202 58 Z" fill="url(#chrome)"/>
+          <path d="M202 60 V154" stroke="#C9A7AE" stroke-width=".8" opacity=".7"/>
+          <path d="M162 98 C166 66 186 52 210 54 C232 56 246 74 242 98 C230 84 214 78 194 80 C180 82 170 88 162 98 Z" fill="#171717"/>
+          <path d="M178 62 C196 54 220 56 232 68" fill="none" stroke="#4a4a4a" stroke-width="2.5" stroke-linecap="round"/>
+          <rect x="168" y="100" width="70" height="16" rx="8" fill="url(#visor)" stroke="#B79B65" stroke-width="1.5"/>
+          <path d="M176 105 h16" stroke="#F4DDE2" stroke-width="2" stroke-linecap="round" opacity=".85"/>
+          <ellipse cx="180" cy="128" rx="8" ry="4" fill="#E9A4B3" opacity=".6"/>
+          <ellipse cx="226" cy="128" rx="8" ry="4" fill="#E9A4B3" opacity=".6"/>
+          <path d="M193 138 C197 134 201 135 203 137 C205 135 209 134 213 138 C209 144 197 144 193 138 Z" fill="#690F26"/>
+          <circle cx="163" cy="110" r="7" fill="url(#gold)"/><circle cx="241" cy="110" r="7" fill="url(#gold)"/>
+          <rect x="159" y="122" width="7" height="10" fill="url(#gold)" transform="rotate(45 162 127)"/>
+        </g>
+      </svg>
+    </figure>
+
+    <p class="cover__tagline">Your unofficial guide to the technology taking over your life.</p>
+
+    <div class="cover__foot">
+      <p class="cover__intro">Artificial intelligence has completely changed the way we live and function, as it’s now part of everyday life. While it makes life easier in many ways, it also raises important questions about privacy, how much we should depend on technology, and whether we’re losing our own way of thinking.</p>
+      <a class="btn btn--cover" href="#ch1" data-scroll>Open the Issue <span aria-hidden="true">↓</span></a>
+    </div>
+    <svg class="barcode" viewBox="0 0 90 40" aria-hidden="true" focusable="false"><path d="M2 2v30M6 2v30M8 2v30M13 2v30M15 2v30M19 2v30M24 2v30M26 2v30M30 2v30M33 2v30M37 2v30M41 2v30M43 2v30M48 2v30M51 2v30M53 2v30M58 2v30M62 2v30M64 2v30M68 2v30M71 2v30M75 2v30M78 2v30M82 2v30M86 2v30M88 2v30"/></svg>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ CHAPTER 01 ============ -->
+    <section class="chapter ch1" id="ch1" aria-labelledby="ch1-title">
+      <span class="bignum" aria-hidden="true">01</span>
+      <div class="wrap grid-2">
+        <div>
+          <p class="kicker type">The Exclusive</p>
+          <h2 id="ch1-title" class="h-display">Everyone’s Talking About AI. <em>But What Actually Is It?</em></h2>
+        </div>
+        <div class="prose reveal">
+          <p class="dropcap">Basically, AI is technology that lets computers do tasks that normally require human intelligence, using systems that learn patterns from huge amounts of data.<sup><a href="#src-1">1</a></sup> For example, if an AI system is trained to recognize cats, it analyzes thousands of images to learn what characteristics cats tend to have.</p>
+          <p>But AI doesn’t necessarily think or understand things the way we humans do. Instead, it uses patterns and calculations to produce results, like when ChatGPT generates answers, or when Spotify recommends songs based on what you listen to every day.</p>
+        </div>
+      </div>
+
+      <figure class="wrap flow reveal" aria-labelledby="flow-cap">
+        <figcaption id="flow-cap" class="sr-only">How AI learns, step by step</figcaption>
+        <div class="flow__steps" role="group" aria-label="How AI learns">
+          <button class="flow__step is-active" type="button" aria-pressed="true" data-step="0">
+            <svg viewBox="0 0 60 60" aria-hidden="true" focusable="false"><rect x="10" y="16" width="30" height="30"/><rect x="16" y="10" width="30" height="30"/><rect x="22" y="4" width="30" height="30" class="fill"/><path d="M28 26l5-9 5 9M40 26l5-9 5 9" class="thin"/></svg>
+            <span class="flow__label">Data</span>
+          </button>
+          <span class="flow__arrow" aria-hidden="true"></span>
+          <button class="flow__step" type="button" aria-pressed="false" data-step="1">
+            <svg viewBox="0 0 60 60" aria-hidden="true" focusable="false"><path d="M14 30l8-16 8 16M30 30l8-16 8 16" stroke-dasharray="3 3"/><path d="M8 40h16M8 46h14M36 40h16M38 46h14"/></svg>
+            <span class="flow__label">Patterns</span>
+          </button>
+          <span class="flow__arrow" aria-hidden="true"></span>
+          <button class="flow__step" type="button" aria-pressed="false" data-step="2">
+            <svg viewBox="0 0 60 60" aria-hidden="true" focusable="false"><path d="M8 10h44v30H26l-10 10V40H8z"/><path d="M20 26l6 6 14-14" class="thick"/></svg>
+            <span class="flow__label">Predictions</span>
+          </button>
+        </div>
+        <p class="flow__detail" aria-live="polite" id="flow-detail">Thousands of cat photos.</p>
+        <template id="flow-copy">
+          <p>Thousands of cat photos.</p>
+          <p>Pointy ears, whiskers, fur.</p>
+          <p>“Probably a cat!”</p>
+        </template>
+      </figure>
+    </section>
+
+    <!-- ============ CHAPTER 02 ============ -->
+    <section class="chapter ch2" id="ch2" aria-labelledby="ch2-title">
+      <span class="bignum" aria-hidden="true">02</span>
+      <div class="wrap">
+        <p class="kicker type">The Love Affair</p>
+        <h2 id="ch2-title" class="h-display">Why We’re All a Little <em>Obsessed.</em></h2>
+        <p class="lede reveal">One of the biggest advantages? AI saves time and makes information more accessible.</p>
+
+        <div class="cards">
+          <button class="card reveal" type="button" aria-expanded="false">
+            <span class="card__inner">
+              <span class="card__face card__front">
+                <span class="card__title">Education</span>
+                <svg class="card__icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M6 14l18-8 18 8-18 8z"/><path d="M12 17v9c0 3 6 6 12 6s12-3 12-6v-9"/><path d="M42 14v12"/></svg>
+                <span class="card__plus" aria-hidden="true">+</span>
+              </span>
+              <span class="card__face card__back">At school, AI has really helped me understand subjects that took me ages, by explaining them in different, easier ways.</span>
+            </span>
+          </button>
+          <button class="card reveal" type="button" aria-expanded="false">
+            <span class="card__inner">
+              <span class="card__face card__front">
+                <span class="card__title">Healthcare</span>
+                <svg class="card__icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><rect x="8" y="8" width="32" height="32" rx="3"/><path d="M24 15v18M15 24h18"/></svg>
+                <span class="card__plus" aria-hidden="true">+</span>
+              </span>
+              <span class="card__face card__back">It can assist doctors in analyzing medical images and detecting certain diseases more quickly and efficiently.<sup>2</sup></span>
+            </span>
+          </button>
+          <button class="card reveal" type="button" aria-expanded="false">
+            <span class="card__inner">
+              <span class="card__face card__front">
+                <span class="card__title">Creativity</span>
+                <svg class="card__icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M24 5l4 14 14 5-14 5-4 14-4-14-14-5 14-5z"/></svg>
+                <span class="card__plus" aria-hidden="true">+</span>
+              </span>
+              <span class="card__face card__back">AI can help creative brains brainstorm and experiment with ideas they’d never have thought of alone.</span>
+            </span>
+          </button>
+          <button class="card reveal" type="button" aria-expanded="false">
+            <span class="card__inner">
+              <span class="card__face card__front">
+                <span class="card__title">Everyday Life</span>
+                <svg class="card__icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><circle cx="24" cy="24" r="17"/><path d="M7 24h34M24 7c6 6 6 28 0 34M24 7c-6 6-6 28 0 34"/></svg>
+                <span class="card__plus" aria-hidden="true">+</span>
+              </span>
+              <span class="card__face card__back">It can plan a city visit around your preferences, or quickly translate something.</span>
+            </span>
+          </button>
+        </div>
+
+        <blockquote class="pull pull--note reveal">
+          <p>I’ve learnt that, used responsibly, AI can be a really powerful tool that adds to our creativity and decision-making rather than replacing them.</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ============ CHAPTER 03 ============ -->
+    <section class="chapter ch3" id="ch3" aria-labelledby="ch3-title">
+      <span class="bignum" aria-hidden="true">03</span>
+      <div class="wrap">
+        <p class="kicker type">The Scandal</p>
+        <h2 id="ch3-title" class="h-display">Not Everything That Glitters Is <em>Intelligent.</em></h2>
+        <p class="lede reveal">But AI also has risks we really need to be careful about.</p>
+
+        <div class="files reveal">
+          <h3 class="files__title">The Red Flag Files</h3>
+          <div class="files__tabs" role="tablist" aria-label="The Red Flag Files">
+            <button role="tab" id="tab-1" aria-controls="file-1" aria-selected="true" tabindex="0" type="button">Misinformation</button>
+            <button role="tab" id="tab-2" aria-controls="file-2" aria-selected="false" tabindex="-1" type="button">Deepfakes</button>
+            <button role="tab" id="tab-3" aria-controls="file-3" aria-selected="false" tabindex="-1" type="button">Privacy &amp; Bias</button>
+            <button role="tab" id="tab-4" aria-controls="file-4" aria-selected="false" tabindex="-1" type="button">The Dependency Trap</button>
+          </div>
+
+          <div class="dossier" role="tabpanel" id="file-1" aria-labelledby="tab-1" tabindex="0">
+            <svg class="dossier__flag" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 22V3M5 4h12l-3 4 3 4H5"/></svg>
+            <p>For some reason, we trust AI blindly: it feels so advanced that we assume it’s always right. But it often makes mistakes, even inventing facts.</p>
+            <p class="dossier__case">In 2023, lawyers were fined for citing fake cases ChatGPT invented.<sup><a href="#src-3">3</a></sup></p>
+          </div>
+          <div class="dossier" role="tabpanel" id="file-2" aria-labelledby="tab-2" tabindex="0" hidden>
+            <svg class="dossier__flag" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 22V3M5 4h12l-3 4 3 4H5"/></svg>
+            <p>Used with bad intentions, AI can create fake images, videos and voices that are hard to spot.</p>
+            <p class="dossier__case">In 2024, a deepfake video call tricked an employee into sending scammers $25 million.<sup><a href="#src-4">4</a></sup></p>
+          </div>
+          <div class="dossier" role="tabpanel" id="file-3" aria-labelledby="tab-3" tabindex="0" hidden>
+            <svg class="dossier__flag" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 22V3M5 4h12l-3 4 3 4H5"/></svg>
+            <p>AI learns from huge amounts of data, sometimes ours. If that data is unfair, the results can be too.</p>
+            <p class="dossier__case">A 2018 study found face-analysis tools erred most on darker-skinned women.<sup><a href="#src-5">5</a></sup></p>
+          </div>
+          <div class="dossier dossier--personal" role="tabpanel" id="file-4" aria-labelledby="tab-4" tabindex="0" hidden>
+            <span class="dossier__stamp dossier__stamp--heart" aria-hidden="true">♥</span>
+            <p>Honestly, this is one of my biggest concerns, because I experience it myself. There’s a thin line between help and dependence. AI can become addictive: it makes things so quick and easy that we stop using our own brains.</p>
+            <p>As a result, we risk not developing essential skills, and what we create becomes vaguer and less thoughtful than when we put in our own effort.</p>
+          </div>
+        </div>
+
+        <blockquote class="pull pull--big reveal">
+          <p>Just because AI says it confidently doesn’t mean it’s true.</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ============ CHAPTER 04 ============ -->
+    <section class="chapter ch4" id="ch4" aria-labelledby="ch4-title">
+      <span class="bignum" aria-hidden="true">04</span>
+      <div class="wrap">
+        <p class="kicker type">The Future Forecast</p>
+        <h2 id="ch4-title" class="h-display">The Future Is <em>Typing</em><span class="typing" aria-hidden="true"><i></i><i></i><i></i></span><span class="sr-only">…</span></h2>
+        <p class="lede reveal">I think in the future we’re going to learn to coexist with AI.</p>
+
+        <div class="filters" role="group" aria-label="Filter the timeline">
+          <button type="button" class="chip is-on" aria-pressed="true" data-filter="all">All</button>
+          <button type="button" class="chip" aria-pressed="false" data-filter="fact">Facts</button>
+          <button type="button" class="chip" aria-pressed="false" data-filter="prediction">Predictions</button>
+        </div>
+
+        <ol class="timeline">
+          <li class="tl reveal" data-kind="prediction">
+            <span class="tag tag--prediction type">Prediction</span>
+            <h3>Education</h3>
+            <p>AI tutors that adapt to how you learn.</p>
+          </li>
+          <li class="tl reveal" data-kind="prediction">
+            <span class="tag tag--prediction type">Prediction</span>
+            <h3>Medicine</h3>
+            <p>Helping doctors with treatments, maybe even surgeries.</p>
+          </li>
+          <li class="tl reveal" data-kind="prediction">
+            <span class="tag tag--prediction type">Prediction</span>
+            <h3>At Work</h3>
+            <p>Repetitive tasks, taken over.</p>
+          </li>
+          <li class="tl reveal" data-kind="prediction">
+            <span class="tag tag--prediction type">Prediction</span>
+            <h3>Jobs</h3>
+            <p>Real challenges as some roles change.</p>
+          </li>
+          <li class="tl reveal" data-kind="fact">
+            <span class="tag tag--fact type">Fact</span>
+            <h3>Environment</h3>
+            <p>Data centres use electricity and water. The IEA projects their electricity demand will more than double by 2030.<sup><a href="#src-6">6</a></sup></p>
+          </li>
+          <li class="tl reveal" data-kind="fact">
+            <span class="tag tag--fact type">Fact</span>
+            <h3>Human Oversight</h3>
+            <p>NIST calls for accountable AI.<sup><a href="#src-7">7</a></sup> I’d add independent thinking.</p>
+          </li>
+        </ol>
+      </div>
+
+      <div class="manifesto">
+        <p class="reveal">The goal shouldn’t be to replace human intelligence, but to use technology to make it <em>stronger.</em></p>
+      </div>
+    </section>
+
+    <!-- ============ CHAPTER 05 ============ -->
+    <section class="chapter ch5" id="ch5" aria-labelledby="ch5-title">
+      <span class="bignum" aria-hidden="true">05</span>
+      <div class="wrap">
+        <h2 id="ch5-title" class="h-display">The Interactive <em>Edition.</em></h2>
+
+        <div class="games">
+          <!-- Feature A -->
+          <article class="game game--guess reveal" aria-labelledby="guess-title">
+            <h3 id="guess-title" class="game__title">AI or Human?</h3>
+            <p class="game__note type">All real, documented cases.</p>
+            <div class="guess" id="guess" aria-live="polite"></div>
+          </article>
+
+          <!-- Feature B -->
+          <article class="game game--status reveal" aria-labelledby="status-title">
+            <h3 id="status-title" class="game__title">What’s Your AI Relationship Status?</h3>
+            <p class="game__note type">Just for fun, not science.</p>
+            <div class="status" id="status"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BEHIND THE ISSUE ============ -->
+    <section class="chapter behind" id="behind" aria-labelledby="behind-title">
+      <div class="wrap behind__inner">
+        <h2 id="behind-title" class="h-display h-display--sm">Behind the Issue: <em>How This Website Was Made</em></h2>
+        <div class="behind__text prose">
+          <p>I wanted this to feel like flipping through a magazine, not reading a tech manual, so I imagined Vogue but for AI. I organized my writing like an issue, with creative headlines.</p>
+          <p>I used HTML for the structure, CSS to handle the layout, fonts and animations, and JavaScript to run everything you can click. I wrote the content myself and used Claude, an AI assistant, to help with the coding, layout and editing my grammar. On a website about AI, it felt right to be honest about that. XOXO</p>
+          <p class="signature">— Constanza Raphael, Editor</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SOURCES ============ -->
+    <section class="sources" id="sources" aria-labelledby="sources-title">
+      <div class="wrap">
+        <h2 id="sources-title" class="kicker type">Sources</h2>
+        <ol class="sources__list">
+          <li id="src-1"><a href="https://oecd.ai/en/ai-principles" target="_blank" rel="noopener">OECD.AI</a></li>
+          <li id="src-2"><a href="https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-enabled-medical-devices" target="_blank" rel="noopener">FDA</a></li>
+          <li id="src-3"><a href="https://www.americanbar.org/content/aba-cms-dotorg/en/groups/litigation/resources/litigation-news/2023/use-chatgpt-research-bogus-cases-sanctions" target="_blank" rel="noopener">Mata v. Avianca</a></li>
+          <li id="src-4"><a href="https://abc17news.com/money/cnn-business-consumer/2024/05/16/british-engineering-giant-arup-revealed-as-25-million-deepfake-scam-victim/" target="_blank" rel="noopener">CNN</a></li>
+          <li id="src-5"><a href="https://proceedings.mlr.press/v81/buolamwini18a.html" target="_blank" rel="noopener">Gender Shades</a></li>
+          <li id="src-6"><a href="https://www.iea.org/news/ai-is-set-to-drive-surging-electricity-demand-from-data-centres-while-offering-the-potential-to-transform-how-the-energy-sector-works" target="_blank" rel="noopener">IEA</a></li>
+          <li id="src-7"><a href="https://www.nist.gov/itl/ai-risk-management-framework" target="_blank" rel="noopener">NIST</a></li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__mark" aria-hidden="true">✦</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
